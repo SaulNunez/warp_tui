@@ -1,10 +1,19 @@
 # Warp
 A browser for WAP.
 
-## History
-In contrast to the song by Cardi B song, WAP is an obsolete protocol used in mobile phones. Pages were served using WML, which rather than just one document like HTML, it used cards, each of which represent a single interaction with the user.
+<img width="1090" height="961" alt="image" src="https://github.com/user-attachments/assets/5cf7e074-09ed-4a62-86be-4a05700334e3" />
 
-# Reason
-Because I can! Also I believe that it's important to be able to view older technologies on current hardware. That's even more important now that several countries are shutting down 2G networks and with them the ability to browse WAP sites from older feature phones that had support for the protocol. 
-Hopefully, this tool can be used to test and demo WAP sites.
-For domains that serve WAP, as fas as I know, only Frogfind.
+## Supported features
+* `wml`
+
+I plan to add support for wmlscript down the line!
+
+## Setup
+1. Clone this project
+2. Install [uv](https://docs.astral.sh/uv/) if you haven't done so already and run `uv sync` in the folder containing the copy of this project
+3. `uv run warp_tui.py`
+
+## What is WAP?
+If you want to know more about this protocol, I recommend this video by Action Retro.
+
+[![Watch the Video](https://img.youtube.com/vi/D62ZsVZCjAA/0.jpg)](https://www.youtube.com/watch?v=D62ZsVZCjAA)
