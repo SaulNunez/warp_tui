@@ -702,7 +702,7 @@ wheels = [
 [[package]]
 name = "warp"
 version = "0.0.1"
-source = { git = "https://github.com/SaulNunez/warp.git?branch=main#b72897cc12e8b24f9c7fc66c42cb19938dc4a3e6" }
+source = { git = "https://github.com/SaulNunez/warp.git?branch=main#b87569ab7749d7720e1be032b73b193a8d7c55c3" }
 
 [[package]]
 name = "warp-tui"

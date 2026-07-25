@@ -119,6 +119,12 @@ class WMLRenderer:
                 if btn:
                     target_list.append(btn)
 
+            elif isinstance(child, Image):
+                alt = getattr(child, "alt", "")
+                src = child.get_source() if hasattr(child, "get_source") else getattr(child, "src", "")
+                label = alt if alt else src
+                current_text.append(f"🖼 [{label}]", style="magenta italic")
+
             elif isinstance(child, str):
                 current_text.append(child)
             elif isinstance(child, BreakHtmlElement):
@@ -127,6 +133,7 @@ class WMLRenderer:
                 cls._append_styled_text(current_text, child)
             else:
                 current_text.append(str(child))
+
 
         if len(current_text):
             target_list.append(current_text)
