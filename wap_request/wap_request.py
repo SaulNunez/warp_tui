@@ -24,4 +24,4 @@ async def request_wap(url: str):
             return r.status_code, r.text
 
         status, text = await loop.run_in_executor(None, blocking_get, url)
-    return (status, text)
+    return (int(status), text)

@@ -1,0 +1,20 @@
+[project]
+name = "warp-tui"
+version = "0.1.0"
+description = "Textual WML Browser"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "textual",
+    "warp",
+]
+
+[tool.uv.sources]
+warp = { git = "https://github.com/SaulNunez/warp.git", branch = "main" }
+
+
+[dependency-groups]
+dev = [
+    "textual-dev",
+]
